@@ -3,12 +3,12 @@ window.onload = () => {
 
      // オブジェクトと変数の準備
      const count_disp = document.getElementById("disp_count");
-     const kane = document.getElementById("kane");
+     const gong = document.getElementById("gong");
      const reset_btn = document.getElementById("btn_reset");
      const count_value = 108;
 
      // 除夜の鐘のクリック処理
-     kane.onclick = () => {
+     gong.onclick = () => {
           count_value -= 1;
           count_disp.innerHTML = count_value;
           if (count_disp.innerHTML <= 0) {
@@ -16,12 +16,12 @@ window.onload = () => {
           }
      };
      // 除夜の鐘のマウスダウン処理
-     kane.onmousedown = () => {
-          kane.style.backgroundColor = "#00FF00";
+     gong.onmousedown = () => {
+          gong.style.backgroundColor = "#00FF00";
      }
      // 除夜の鐘のマウスアップ処理
-     kane.onmouseup = () => {
-          kane.style.backgroundColor = "";
+     gong.onmouseup = () => {
+          gong.style.backgroundColor = "";
      }
      // リセットボタンのクリック処理
      reset_btn.onclick = () => {
