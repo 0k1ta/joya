@@ -15,6 +15,7 @@ window.onload = () => {
                count_disp.innerHTML = "煩悩退散!"
           }
      };
+     
      // 除夜の鐘のマウスダウン処理
      gong.onmousedown = () => {
           gong.style.backgroundColor = "#00FF00";
